@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.first-col{
+    width: 200px;
+}
+
+.second-col{
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+.third-col{
+    width: 300px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      overflow-x: scroll;
+    }
+  }

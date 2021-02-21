@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="first-col">
+        
+  
+        <input 
+        [(ngModel)]="inputText"
+        (ngModelChange)="onChangeText()"
+      />
+      <div *ngIf="!!numberInput">
+        {{numberInput}}
+    </div>
+    </div>
+    <div class="second-col">
+        <select (change)="onChangeDropdown($event.target.value)">
+            <option value="isPrime">isPrime</option>
+            <option value="IsFibanacci">IsFibanacci</option>
+        </select>
+    </div>
+    <div class="third-col">{{result}}</div>
+
+</div>
